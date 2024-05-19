@@ -1,23 +1,4 @@
-let personName: string = ("Talha");
 
-
-console.log("toLowerCase:",personName.toLowerCase());
-
-console.log("toUpperCase:",personName.toLocaleUpperCase());
-
-console.log("titleCase:",personName.replace(/\bw/g, c=> c.toUpperCase()));                                                         
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+let Author: string = ("Albert Einstein");
+console.log(`${Author} once said, “A person who never made a mistake never tried anything new."
+`);

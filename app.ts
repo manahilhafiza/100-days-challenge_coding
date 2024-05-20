@@ -1,6 +1,7 @@
-let names: string [] =['manal','taha','abid','zaid'];
-for(let i = 0; i <names.length;i ++){
-    console.log(names [i]);
-}
+let transport: string [] = ["motorcycle", "car", "cycle"];
+ const message: string [] = ['I would like to own a .'];
 
+for(let i= 0; i <transport.length; i++){
+console.log(message + transport [i]);
+  }
 

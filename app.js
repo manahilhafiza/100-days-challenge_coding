@@ -1,2 +1,4 @@
-var favoriteNumber = 3;
-console.log("My favorite number is  ".concat(favoriteNumber, " "));
+var names = ['manal', 'taha', 'abid', 'zaid'];
+for (var i = 0; i < names.length; i++) {
+    console.log(names[i]);
+}

@@ -1,4 +1,2 @@
-console.log(5 + 3);
-console.log(11 - 3);
-console.log(4 * 2);
-console.log(16 / 2);
+var favoriteNumber = 3;
+console.log("My favorite number is  ".concat(favoriteNumber, " "));

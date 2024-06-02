@@ -1,20 +1,24 @@
-var guestList = ["Ali", "minal", "sam", "daniyal"];
-console.log("Great news! I found a bigger dinner table!");
-var absent_Guest = "minal";
-guestList.push('yasir');
-guestList.unshift('talha');
-guestList.splice(guestList.length / 2, 0, 'kamran');
-guestList.forEach(function (guestList) {
-    console.log("Dear ".concat(guestList, ", \n\n would you like to join me for dinner?"));
-    console.log("Dear Mr. ".concat(absent_Guest, " \n\n is not coming to the party."));
-});
-console.log("Unfortunately, \n\n I can only invite two people for dinner.");
-while (guestList.length > 2) {
-    var removedGuest = guestList.pop();
-    console.log("Sorry, ".concat(removedGuest, ",\n\n I can't invite you to dinner."));
-}
-guestList.forEach(function (guest) {
-    console.log("Dear ".concat(guest, ", \n\n you're still invited to dinner."));
-});
-guestList.splice(0, guestList.length);
-console.log(guestList);
+//Question 18 Seeing the World
+var __spreadArray = (this && this.__spreadArray) || function (to, from, pack) {
+    if (pack || arguments.length === 2) for (var i = 0, l = from.length, ar; i < l; i++) {
+        if (ar || !(i in from)) {
+            if (!ar) ar = Array.prototype.slice.call(from, 0, i);
+            ar[i] = from[i];
+        }
+    }
+    return to.concat(ar || Array.prototype.slice.call(from));
+};
+var places = ["New Zealand", "Iceland", "Japan", "Switzerland", "Norway"];
+console.log("Original order:", places);
+console.log("Alphabetical order:", __spreadArray([], places, true).sort());
+console.log("Original order:", places);
+console.log("Reverse alphabetical order:", __spreadArray([], places, true).sort().reverse());
+console.log("Original order:", places);
+places.reverse();
+console.log("Reversed order:", places);
+places.reverse();
+console.log("Original order:", places);
+places.sort();
+console.log("Alphabetical order:", places);
+places.reverse();
+console.log("Reverse alphabetical order:", places);
